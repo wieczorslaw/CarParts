@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <!--
+        Added the constraints for entity PartServiceAction.
+    -->
+    <changeSet id="20200426184300-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="part_id"
+                                 baseTableName="part_service_action"
+                                 constraintName="fk_part_service_action_part_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="car_part"/>
+
+    </changeSet>
+</databaseChangeLog>
