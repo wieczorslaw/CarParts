@@ -1,5 +1,7 @@
 # CarParts
 
+[DEMO](http://80.211.206.214:8081/swagger-ui.html)
+
 ### Packaging as jar
 
 To build the final jar and optimize the CarParts application for production, run:
